@@ -1,0 +1,246 @@
+{# templates/number.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-mdb-toggle="collapse"
+    data-mdb-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center mb-3">
+        <a class="navbar-brand" href="#">
+        <img
+          id="MDB-logo"
+          src="https://donk.es/hmp/wp-content/uploads/2022/03/cropped-HydroMining-PY.png"
+          alt="HydroMiningPY"
+          draggable="false"
+          height="106"
+      /></a>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center mx-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('inicio_en') }}">START</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('ofrecemos_en') }}">WHAT DO WE OFFER?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('minarvscomprar_en') }}">MINING VS BUYING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('rentabilidad_en') }}">PROFITABILITY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('faq_en') }}">FREQUENTLY ASKED QUESTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('faq_es') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" alt="Spanish" /></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link mx-2" href="{{ path('faq_pt') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Portuguese" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="row"><h1 class="text-center text-white">Frequently Asked Questions</h1><br><br><br><br></div>
+
+
+
+
+    <div class="row justify-content-center">
+
+          <div class="col-12">
+
+          <div class="accordion" id="accordionExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne" class="bg-dark">
+                  <button class="accordion-button color-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa-solid fa-question"></i>&nbsp;&nbsp;   How is the relationship between HydroMiningPY and customers regulated?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                  It is regulated by a contract, the conditions of which vary in terms of duration and monthly amount depending on the terms chosen by each customer.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-question"></i>&nbsp;&nbsp;    What does HydroMiningPY hosting consist of?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                  It consists of hosting the customer's equipment and, as part of this service, will provide and organise it in racks and/or racks, also providing sufficient electrical capacity at the required voltage and power, with constant monitoring to provide the service in the best conditions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-question"></i>&nbsp;&nbsp;   What is the average uptime of the service?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                  The company makes every commercially reasonable effort to make the hosting service available to the customer for as long as possible each month.
+                  </div>
+                </div>
+              </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fa-solid fa-question"></i>&nbsp;&nbsp;  What is the price per kWh at HydrominingPY's facilities?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                  We will always offer the best possible price for electricity and we use renewable energy for this. Currently the price is 0.08$/kWh.
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <i class="fa-solid fa-question"></i>&nbsp;&nbsp;  What hardware is supported at HydrominingPY?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Hardware may be purchased from the Company, in which case it will be guaranteed to be installed and operational by the date stipulated in the Contract. If purchased from a third party, the Company will inspect the Customer's Equipment to determine the suitability of the accommodation and has full discretion to accept or reject any Customer Hardware. Upon receipt, inspection and confirmation that the Customer Hardware is fully operational, The Company will arrange for the installation of the Customer Hardware at the Hosting Premises.
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <i class="fa-solid fa-question"></i>&nbsp;&nbsp; How is payment for service made to HydroMiningPY?
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Accepted forms of payment include credit card, debit card, bank transfer and cryptocurrencies, to be agreed. The exchange rate will be the last traded price for that cryptocurrency to USD exchange transaction at the time of payment.
+                        </div>
+                      </div>
+                    </div>
+              </div>
+</div>
+
+
+
+
+          </div>
+
+
+    </div>
+
+  <div class="row mt-2">
+
+  </div>
+
+  <div class="row mt-2">
+
+</div>
+
+<div class="row mt-2">
+
+</div>
+
+<div class="row mt-2">
+
+</div>
+
+<div class="row mt-2">
+
+</div>
+
+
+
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                <ul class="adress">
+
+                     <li>
+                        <p>  <img
+                            id="MDB-logo"
+                            src="https://donk.es/hmp/wp-content/uploads/2022/03/cropped-HydroMining-PY.png"
+                            alt="HydroMiningPY"
+                            draggable="false"
+                            height="53"
+                        /></p>
+                      </li>
+
+                 </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <ul class="contact">
+                     <span>Contact</span>
+                     <li class="text-white">
+                        <i class="fa-solid fa-location-dot fa-2xl"></i><br><br>  C/ Juana María de Lara, s/n ALTO PARANÁ Paraguay <br><br>
+                      </li>
+
+                      <li class="text-white">
+                        <i class="fa-solid fa-envelope fa-2xl"></i><br><br>info@hydrominingpy.com <br><br>
+                      </li>
+
+                      <li class="text-white">
+                      <i class="fa-solid fa-phone-volume fa-2xl"></i><br><br>+34 608 19 74 28 &nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="Red dot" /> <br>
+                      +59 59 7124-2032 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="Red dot" /> <br>
+                      +55 45 9802-7923 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Red dot" />
+                      </li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <ul class="social">
+
+                   <li>
+                      <button type="button" class="btn btn-warning text-white">Contactar</button>
+                   </li>
+
+
+                 </ul>
+            </div>
+       </div>
+    </div>
+</footer>
+
+
+
+
+{% endblock %}

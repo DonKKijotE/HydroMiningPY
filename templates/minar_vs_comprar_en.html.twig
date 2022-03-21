@@ -1,0 +1,217 @@
+{# templates/number.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-mdb-toggle="collapse"
+    data-mdb-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center mb-3">
+        <a class="navbar-brand" href="#">
+        <img
+          id="MDB-logo"
+          src="https://donk.es/hmp/wp-content/uploads/2022/03/cropped-HydroMining-PY.png"
+          alt="HydroMiningPY"
+          draggable="false"
+          height="106"
+      /></a>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center mx-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('inicio_en') }}">START</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('ofrecemos_en') }}">WHAT DO WE OFFER?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('minarvscomprar_en') }}">MINING VS BUYING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('rentabilidad_en') }}">PROFITABILITY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('faq_en') }}">FREQUENTLY ASKED QUESTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="{{ path('minarvscomprar_es') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" alt="Spanish" /></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link mx-2" href="{{ path('minarvscomprar_pt') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Portuguese" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="row"><h1 class="text-center text-white">Mining VS Buying</h1><br><br><br><br></div>
+
+<div class="row">
+    <div class="col-6">
+      <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-1-web.png" class="img-fluid"/>
+      <h4 class="text-warning">IT’S SIMPLE</h4>
+      <p class="text-left text-white">Mining Bitcoin is not complicated or expensive.</p>
+
+    </div>
+
+    <div class="col-6">
+    <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-5-web.png" class="img-fluid"/>
+    <h4 class="text-warning">RETURN OF INVESTMENT</h4>
+    <p class="text-left text-white">The return on investment (ROI) of mining is currently between 12-14 months. This means that machine prices are in this range.<br><br></p>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+      <div class="col-6">
+        <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-3-web.png" class="img-fluid"/>
+        <h4 class="text-warning">IT’S PRIVATE</h4>
+        <p class="text-left text-white">Mining is private, inexpensive, and returns 4-5x more on average vs buying and hodling.</p>
+
+      </div>
+
+      <div class="col-6">
+      <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-6-web.png" class="img-fluid"/>
+      <h4 class="text-warning">LIFESPAN</h4>
+      <p class="text-left text-white">For the latest generation of miners manufactured by Bitmain and with which we recommend mining (S19), the estimated lifetime is between 7-8 years.</p>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+          <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-2bis-web.png" class="img-fluid"/>
+          <h4 class="text-warning">DCA</h4>
+          <p class="text-left text-white">Mining BTC is a way to DCA (Dollar Cost Average) or average selling prices, if you plan to continually sell your BTC.</p>
+
+        </div>
+
+        <div class="col-6">
+        <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-8-web.png" class="img-fluid"/>
+        <h4 class="text-warning">INVESTMENT AMORTIZATION</h4>
+        <p class="text-left text-white">If you want to buy for example $ 10k of BTC and send it to a cold wallet, consider putting that same investment to work and buy an ASIC, which will pay for itself in 12-14 months, and by then you will have a miner paid with enough years of profitability to be mined.<br><br></p>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+          <div class="col-6">
+            <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-energia-web3.png" class="img-fluid"/>
+            <h4 class="text-warning">ENERGY - BTC</h4>
+            <p class="text-left text-white">Instead of acquiring the btc in a house of exchange or exchange, you would be acquiring them with your miner, and paying your energy provider.</p>
+
+          </div>
+
+          <div class="col-6">
+          <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-7-web.png" class="img-fluid"/>
+          <h4 class="text-warning">LOW INITIAL INVESTMENT CAPITAL</h4>
+          <p class="text-left text-white">You don’t have to spend $ 9-12k to start mining. There are intermediate options which have a return on investment similar to S19.<br><br></p>
+
+          </div>
+
+        </div>
+
+
+  <div class="row mt-2">
+
+  </div>
+
+  <div class="row mt-2">
+
+</div>
+
+<div class="row mt-2">
+
+</div>
+
+<div class="row mt-2">
+
+</div>
+
+<div class="row mt-2">
+
+</div>
+
+
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <ul class="adress">
+
+                     <li>
+                        <p>  <img
+                            id="MDB-logo"
+                            src="https://donk.es/hmp/wp-content/uploads/2022/03/cropped-HydroMining-PY.png"
+                            alt="HydroMiningPY"
+                            draggable="false"
+                            height="53"
+                        /></p>
+                      </li>
+
+                 </ul>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                <ul class="contact">
+                     <span>Contact</span>
+                     <li class="text-white">
+                        <i class="fa-solid fa-location-dot fa-2xl"></i><br><br>  C/ Juana María de Lara, s/n ALTO PARANÁ Paraguay <br><br>
+                      </li>
+
+                      <li class="text-white">
+                        <i class="fa-solid fa-envelope fa-2xl"></i><br><br>info@hydrominingpy.com <br><br>
+                      </li>
+
+                      <li class="text-white">
+                      <i class="fa-solid fa-phone-volume fa-2xl"></i>&nbsp;&nbsp;<i class="fa-brands fa-whatsapp fa-2xl"></i><br><br><a href="https://wa.me/0034608197428" target="_blank">+34 608 19 74 28 </a>&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="Red dot" /> <br>
+                      +59 59 7124-2032 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="Red dot" /> <br>
+                      +55 45 9802-7923 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Red dot" />
+                      </li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <ul class="social">
+
+                   <li>
+                      <button type="button" class="btn btn-warning text-white">Contact</button>
+                   </li>
+
+
+                 </ul>
+            </div>
+       </div>
+    </div>
+</footer>
+
+
+
+{% endblock %}
