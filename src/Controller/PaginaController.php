@@ -6,6 +6,8 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
 
 class PaginaController extends AbstractController
 {
@@ -149,8 +151,23 @@ class PaginaController extends AbstractController
           /**
             * @Route("/contacto-es",  name="contacto_es")
             */
-           public function contactoEs(): Response
+           public function contactoEs(MailerInterface $mailer): Response
            {
+
+             $email = (new Email())
+             ->from('info@hydrominingpy.com')
+             ->to('kijotestuff@gmail.com')
+             //->cc('cc@example.com')
+             //->bcc('bcc@example.com')
+             //->replyTo('fabien@example.com')
+             //->priority(Email::PRIORITY_HIGH)
+             ->subject('Time for Symfony Mailer!')
+             ->text('Sending emails is fun again!');
+
+             $mailer->send($email);
+
+            
+
 
 
                return $this->render('contacto_es.html.twig');
@@ -161,6 +178,8 @@ class PaginaController extends AbstractController
              */
             public function terahashEs(): Response
             {
+
+
 
                 return $this->render('terahash_es.html.twig');
             }
