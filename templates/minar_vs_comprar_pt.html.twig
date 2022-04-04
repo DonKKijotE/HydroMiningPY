@@ -36,9 +36,7 @@
             <li class="nav-item">
               <a class="nav-link mx-2" href="{{ path('inicio_pt') }}">INICIO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('ofrecemos_pt') }}">O QUE É QUE OFERECEMOS?</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link mx-2" href="{{ path('minarvscomprar_pt') }}">MINERAÇAO VS COMPRA</a>
             </li>
@@ -66,20 +64,20 @@
 
 <div class="container">
 
-<div class="row"><h1 class="text-center text-white">Mineraçao VS Compra</h1><br><br><br><br></div>
+<div class="row"><h1 class="text-center titulo">Mineraçao VS Compra</h1><br><br><br><br></div>
 
 <div class="row">
     <div class="col-6">
-      <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-1-web.png" class="img-fluid"/>
-      <h4 class="text-warning">É SIMPLES</h4>
-      <p class="text-left text-white">A Mineração Bitcoin não é complicada nem cara.</p>
+      <img src="{{ asset("build/images/sencillo.png") }}" class="img-fluid"/>
+      <h4 >É SIMPLES</h4>
+      <p class="text-left">A Mineração Bitcoin não é complicada nem cara.</p>
 
     </div>
 
     <div class="col-6">
-    <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-5-web.png" class="img-fluid"/>
-    <h4 class="text-warning">RETORNO DO INVESTIMENTO</h4>
-    <p class="text-left text-white">O retorno do investimento (ROI) da exploração mineira situa-se actualmente entre 12-14 meses. Isto significa que os preços das máquinas se situam nesta gama.<br><br></p>
+    <img src="{{ asset("build/images/roi2.png") }}" class="img-fluid"/>
+    <h4 >RETORNO DO INVESTIMENTO</h4>
+    <p class="text-left">O retorno do investimento (ROI) da exploração mineira situa-se actualmente entre 12-14 meses. Isto significa que os preços das máquinas se situam nesta gama.<br><br></p>
 
     </div>
 
@@ -87,16 +85,16 @@
 
   <div class="row">
       <div class="col-6">
-        <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-3-web.png" class="img-fluid"/>
-        <h4 class="text-warning">É PRIVADO</h4>
-        <p class="text-left text-white">A exploração mineira é privada, barata, e rende em média 4-5x mais do que a compra e o abate de árvores.</p>
+        <img src="{{ asset("build/images/privado.png") }}" class="img-fluid"/>
+        <h4 >É PRIVADO</h4>
+        <p class="text-left">A exploração mineira é privada, barata, e rende em média 4-5x mais do que a compra e o abate de árvores.</p>
 
       </div>
 
       <div class="col-6">
-      <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-6-web.png" class="img-fluid"/>
-      <h4 class="text-warning">VIDA UTIL</h4>
-      <p class="text-left text-white">Para a última geração de mineiros fabricados pela Bitmain e com os quais recomendamos a mineração (S19), a duração de vida estimada é entre 7-8 anos.</p>
+      <img src="{{ asset("build/images/vidautil.png") }}" class="img-fluid"/>
+      <h4 >VIDA UTIL</h4>
+      <p class="text-left">Para a última geração de mineiros fabricados pela Bitmain e com os quais recomendamos a mineração (S19), a duração de vida estimada é entre 7-8 anos.</p>
 
       </div>
 
@@ -104,16 +102,16 @@
 
     <div class="row">
         <div class="col-6">
-          <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-2bis-web.png" class="img-fluid"/>
-          <h4 class="text-warning">DCA</h4>
-          <p class="text-left text-white">Mining BTC é um caminho para DCA (Dollar Cost Average) ou preços médios de venda, se planeia vender continuamente as suas BTC.</p>
+          <img src="{{ asset("build/images/dca.png") }}" class="img-fluid"/>
+          <h4 >DCA</h4>
+          <p class="text-left">Mining BTC é um caminho para DCA (Dollar Cost Average) ou preços médios de venda, se planeia vender continuamente as suas BTC.</p>
 
         </div>
 
         <div class="col-6">
-        <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-8-web.png" class="img-fluid"/>
-        <h4 class="text-warning">AMORTIZAÇÃO DO INVESTIMENTO</h4>
-        <p class="text-left text-white">Se quiser comprar, por exemplo, $10k de BTC e enviá-lo para uma carteira fria, considere colocar esse mesmo investimento para trabalhar e comprar um ASIC, que se pagará a si próprio em 12-14 meses, e nessa altura já terá um mineiro pago com muitos anos de rentabilidade da exploração mineira.<br><br></p>
+        <img src="{{ asset("build/images/roi.png") }}" class="img-fluid"/>
+        <h4 >AMORTIZAÇÃO DO INVESTIMENTO</h4>
+        <p class="text-left">Se quiser comprar, por exemplo, $10k de BTC e enviá-lo para uma carteira fria, considere colocar esse mesmo investimento para trabalhar e comprar um ASIC, que se pagará a si próprio em 12-14 meses, e nessa altura já terá um mineiro pago com muitos anos de rentabilidade da exploração mineira.<br><br></p>
 
         </div>
 
@@ -121,16 +119,14 @@
 
       <div class="row">
           <div class="col-6">
-            <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-energia-web3.png" class="img-fluid"/>
-            <h4 class="text-warning">ENERGÍA - BTC</h4>
-            <p class="text-left text-white">Em vez de adquirir o btc de uma bolsa, estaria a adquiri-lo ao seu mineiro, e a pagar ao seu fornecedor de energia.</p>
+            <img src="{{ asset("build/images/energybtc.png") }}" class="img-fluid"/>
+            <h4 >ENERGÍA - BTC</h4>
+            <p class="text-left">Em vez de adquirir o btc de uma bolsa, estaria a adquiri-lo ao seu mineiro, e a pagar ao seu fornecedor de energia.</p>
 
           </div>
 
           <div class="col-6">
-          <img src="https://hydrominingpy.com/wp-content/uploads/2021/12/icono-minar-7-web.png" class="img-fluid"/>
-          <h4 class="text-warning">BAIXO CAPITAL INICIAL DE INVESTIMENTO</h4>
-          <p class="text-left text-white">Não é necessário gastar 9-12k dólares para iniciar a exploração mineira.  Existem opções intermédias que têm um retorno do investimento semelhante ao S19.<br><br></p>
+
 
           </div>
 
@@ -161,58 +157,7 @@
 
 </div>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <ul class="adress">
-
-                     <li>
-                        <p>  <img
-                        id="HydroMiningPY Logo"
-                        src="{{ asset("build/images/HydroMiningPY.png") }}"
-                            alt="HydroMiningPY"
-                            draggable="false"
-                            height="53"
-                        /></p>
-                      </li>
-
-                 </ul>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <ul class="contact">
-                     <span>Contato</span>
-                     <li class="text-white">
-                        <i class="fa-solid fa-location-dot fa-2xl"></i> &nbsp;&nbsp;  C/ Juana María de Lara, s/n ALTO PARANÁ Paraguay <br><br>
-                      </li>
-
-                      <li class="text-white">
-                        <i class="fa-solid fa-envelope fa-2xl"></i> &nbsp;&nbsp; info@hydrominingpy.com <br><br>
-                      </li>
-
-                      <li class="text-white">
-                      <i class="fa-solid fa-phone-volume fa-2xl"></i> &nbsp; +34 608 19 74 28 &nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="Red dot" /><br>
-                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+59 59 7124-2032 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="Red dot" /> <br>
-                        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  +55 45 9802-7923 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Red dot" />
-                      </li>
-
-                </ul>
-            </div>
-
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                <ul class="social">
-
-                   <li>
-                      <button type="button" class="btn btn-warning text-white">Contato</button>
-                   </li>
-
-
-                 </ul>
-            </div>
-       </div>
-    </div>
-</footer>
+ {% include 'footer_pt.html.twig' %}
 
 
 
