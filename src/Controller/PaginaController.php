@@ -169,7 +169,7 @@ class PaginaController extends AbstractController
 
                $message = (new Email())
                    ->from($contactFormData['email'])
-                   ->to('kijotestuff@gmail.com')
+                   ->to('info@hydrominingpy.com')
                    ->subject('SOLICITUD WEB')
                    ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
                        'Nombre : '. $contactFormData['nombre'].\PHP_EOL.
@@ -209,7 +209,7 @@ class PaginaController extends AbstractController
 
                   $message = (new Email())
                       ->from($contactFormData['email'])
-                      ->to('kijotestuff@gmail.com')
+                      ->to('info@hydrominingpy.com')
                       ->subject('SOLICITUD WEB')
                       ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
                           'Nombre : '. $contactFormData['name'].\PHP_EOL.
@@ -249,7 +249,7 @@ class PaginaController extends AbstractController
 
                      $message = (new Email())
                          ->from($contactFormData['email'])
-                         ->to('kijotestuff@gmail.com')
+                         ->to('info@hydrominingpy.com')
                          ->subject('SOLICITUD WEB')
                          ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
                              'Nombre : '. $contactFormData['nombre'].\PHP_EOL.
