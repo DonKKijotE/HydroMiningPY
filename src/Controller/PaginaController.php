@@ -4,10 +4,14 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
+use App\Form\Type\ContactoType;
+use App\Form\Type\ContactoenType;
+use App\Form\Type\ContactoptType;
 
 class PaginaController extends AbstractController
 {
@@ -151,27 +155,126 @@ class PaginaController extends AbstractController
           /**
             * @Route("/contacto-es",  name="contacto_es")
             */
-           public function contactoEs(MailerInterface $mailer): Response
-           {
+             public function contactoEs(Request $request, MailerInterface $mailer): Response
+             {
 
-             $email = (new Email())
-             ->from('info@hydrominingpy.com')
-             ->to('kijotestuff@gmail.com')
-             //->cc('cc@example.com')
-             //->bcc('bcc@example.com')
-             //->replyTo('fabien@example.com')
-             //->priority(Email::PRIORITY_HIGH)
-             ->subject('Time for Symfony Mailer!')
-             ->text('Sending emails is fun again!');
+             $form = $this->createForm(ContactoType::class);
 
-             $mailer->send($email);
-
-            
+             $form->handleRequest($request);
 
 
+             if($form->isSubmitted() && $form->isValid()) {
 
-               return $this->render('contacto_es.html.twig');
-           }
+               $contactFormData = $form->getData();
+
+               $message = (new Email())
+                   ->from($contactFormData['email'])
+                   ->to('kijotestuff@gmail.com')
+                   ->subject('SOLICITUD WEB')
+                   ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
+                       'Nombre : '. $contactFormData['nombre'].\PHP_EOL.
+                       $contactFormData['mensaje'],
+                       'text/plain');
+               $mailer->send($message);
+
+
+
+
+               $this->addFlash('success', 'Mensaje enviado.');
+
+               return $this->redirectToRoute('contacto_es');
+             }
+
+
+
+             return $this->render('contacto_es.html.twig', [
+               'our_form' => $form->createView()
+             ]);
+             }
+
+             /**
+               * @Route("/contacto-en",  name="contacto_en")
+               */
+                public function contactoEn(Request $request, MailerInterface $mailer): Response
+                {
+
+                $form = $this->createForm(ContactoenType::class);
+
+                $form->handleRequest($request);
+
+
+                if($form->isSubmitted() && $form->isValid()) {
+
+                  $contactFormData = $form->getData();
+
+                  $message = (new Email())
+                      ->from($contactFormData['email'])
+                      ->to('kijotestuff@gmail.com')
+                      ->subject('SOLICITUD WEB')
+                      ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
+                          'Nombre : '. $contactFormData['name'].\PHP_EOL.
+                          $contactFormData['message'],
+                          'text/plain');
+                  $mailer->send($message);
+
+
+
+
+                  $this->addFlash('success', 'Message sent.');
+
+                  return $this->redirectToRoute('contacto_en');
+                }
+
+
+
+                return $this->render('contacto_en.html.twig', [
+                  'our_form' => $form->createView()
+                ]);
+                }
+
+                /**
+                  * @Route("/contacto-pt",  name="contacto_pt")
+                  */
+                   public function contactoPt(Request $request, MailerInterface $mailer): Response
+                   {
+
+                   $form = $this->createForm(ContactoptType::class);
+
+                   $form->handleRequest($request);
+
+
+                   if($form->isSubmitted() && $form->isValid()) {
+
+                     $contactFormData = $form->getData();
+
+                     $message = (new Email())
+                         ->from($contactFormData['email'])
+                         ->to('kijotestuff@gmail.com')
+                         ->subject('SOLICITUD WEB')
+                         ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
+                             'Nombre : '. $contactFormData['nombre'].\PHP_EOL.
+                             $contactFormData['mensaje'],
+                             'text/plain');
+                     $mailer->send($message);
+
+
+
+
+                     $this->addFlash('success', 'Mensaje enviado.');
+
+                     return $this->redirectToRoute('contacto_pt');
+                   }
+
+
+
+                   return $this->render('contacto_pt.html.twig', [
+                     'our_form' => $form->createView()
+                   ]);
+                   }
+
+
+
+
 
            /**
              * @Route("/comprar-terahash",  name="terahash_es")

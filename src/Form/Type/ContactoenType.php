@@ -11,14 +11,14 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class ContactoType extends AbstractType
+class ContactoenType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('nombre', TextType::class, ['required' => true])
+            ->add('name', TextType::class, ['required' => true])
             ->add('email', EmailType::class, ['required' => true])
-            ->add('mensaje', TextareaType::class,  ['required' => true])
+            ->add('message', TextareaType::class,  ['required' => true])
 
         ;
     }

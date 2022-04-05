@@ -8,8 +8,6 @@
 
 <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
 
-
-  </button>
   <div class="container d-flex justify-content-center">
     <div class="row">
       <div class="col-12 d-flex justify-content-center mb-3">
@@ -26,23 +24,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav align-items-center mx-auto">
             <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('inicio_es') }}">INICIO</a>
+              <a class="nav-link mx-2" href="{{ path('inicio_en') }}">HOME</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('minarvscomprar_es') }}">MINAR VS COMPRAR</a>
+              <a class="nav-link mx-2" href="{{ path('minarvscomprar_en') }}">MINING VS BUYING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('rentabilidad_es') }}">RENTABILIDAD</a>
+              <a class="nav-link mx-2" href="{{ path('rentabilidad_en') }}">PROFITABILITY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('faq_es') }}">PREGUNTAS FRECUENTES</a>
+              <a class="nav-link mx-2" href="{{ path('faq_en') }}">FREQUENTLY ASKED QUESTIONS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('contacto_es') }}">CONTACTO</a>
+              <a class="nav-link mx-2" href="{{ path('contacto_en') }}">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="{{ path('contacto_en') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="English" /></a>
+              <a class="nav-link mx-2" href="{{ path('contacto_es') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" alt="Spanish" /></a>
             </li>
             <li class="nav-item">
             <a class="nav-link mx-2" href="{{ path('contacto_pt') }}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Portuguese" /></a>
@@ -93,7 +91,7 @@
       {{ form_start(our_form) }}
 
       <div class="form-group">
-      {{ form_row(our_form.nombre, {'attr': {'class': 'form-control'}}) }}
+      {{ form_row(our_form.name, {'attr': {'class': 'form-control'}}) }}
       </div>
 
 
@@ -102,12 +100,12 @@
 
         </div>
         <div class="form-group">
-            {{ form_row(our_form.mensaje, {'attr': {'class': 'form-control'}}) }}
+            {{ form_row(our_form.message, {'attr': {'class': 'form-control'}}) }}
 
         </div>
 
         <div class="form-group">
-            <br><br><input type="submit" value="Enviar" class="btn btn-primary">
+            <br><br><input type="submit" value="Send" class="btn btn-primary">
         </div>
         {{ form_end(our_form) }}
 
@@ -144,6 +142,6 @@
 
 </div>
 
- {% include 'footer_es.html.twig' %}
+ {% include 'footer_en.html.twig' %}
 
 {% endblock %}
